@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://www.passbyme.com/"
   spec.license       = "MIT"
 
-  spec.files         = Dir[ "lib/**/*.rb" ]
+  spec.files         = Dir[ "lib/**/*.rb", "lib/passbyme2fa-client/truststore.pem" ]
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
