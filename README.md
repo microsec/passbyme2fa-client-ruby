@@ -188,8 +188,3 @@ If the tests all pass, we can create the gem using the command
 ```
 gem build passbyme2fa-client.gemspec
 ```
-
-# Release History
-
-- 1.0.0
-	- Initial release
