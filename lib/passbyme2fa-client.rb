@@ -8,7 +8,7 @@ require_relative 'passbyme2fa-client/session_info'
 
 class PassByME2FAClient
 
-  VERSION = "1.0.3"
+  VERSION = "1.0.4"
 
   module MessageType
     AUTHORIZATION = "authorization"

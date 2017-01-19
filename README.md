@@ -23,6 +23,7 @@ You can download our API documentation after login.
 * [Release History](#release-history)
 
 # Installation
+Minimum required Ruby version is 1.9.
 ```
 gem install passbyme2fa-client
 ```
@@ -65,10 +66,7 @@ for details)
 [Net::HTTP attributes](https://ruby-doc.org/stdlib-2.4.0/libdoc/net/http/rdoc/Net/HTTP.html)
 for details)
 - **address**: The address of the PassBy[ME] service to use. This parameter is
-optional. by default the SDK will connect to our test service. The PassBy[ME]
-service url-s are the following:
-	- *Test service*: auth-sp.passbyme.com
-	- *Production service*: api.passbyme.com
+optional. by default the SDK will connect to auth-sp.passbyme.com.
 - You can supply any attribute accepted by Net::HTTP
 (see: https://ruby-doc.org/stdlib-2.4.0/libdoc/net/http/rdoc/Net/HTTP.html)
 to influence the connection.
@@ -139,7 +137,7 @@ Throws a [PassByMEError](#passbymeerror) if a PassBy[ME] specific error occurs.
 The **SessionInfo** object describes the state of a message session. It consists
 of the following readable attributes:
 - **message_id**: The id of the message that can be used to reference the message
-- **expiration_date**: The date and time until the message can be downloaded with
+- **expiration_date**: The date and time until which the message can be downloaded with
 the PassBy[ME] applications
 - **recipient_statuses**: An array of **RecipientStatus** objects. Each object
 consist of the following fields
